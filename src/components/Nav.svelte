@@ -56,7 +56,7 @@
 
 <nav>
 	
-	<ul reversed="reversed">
+	<ul>
 		<li class="logo"><a href='.'><strong>De Tijdwinst Programmeur</strong></a></li>
 		
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
