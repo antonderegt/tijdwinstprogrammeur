@@ -12,6 +12,7 @@
 	ul {
 		margin: 0;
 		padding: 0;
+		/* float: right; */
 	}
 
 	/* clearfix */
@@ -23,7 +24,7 @@
 
 	li {
 		display: block;
-		float: left;
+		float: right;
 	}
 
 	.selected {
@@ -46,15 +47,24 @@
 		padding: 1em 0.5em;
 		display: block;
 	}
+
+	.logo {
+		float: left;
+	}
+
 </style>
 
 <nav>
-	<ul>
-		<li><a class:selected='{segment === undefined}' href='.'>home</a></li>
-		<li><a class:selected='{segment === "about"}' href='about'>about</a></li>
-
+	
+	<ul reversed="reversed">
+		<li class="logo"><a href='.'><strong>De Tijdwinst Programmeur</strong></a></li>
+		
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
 		<li><a rel=prefetch class:selected='{segment === "blog"}' href='blog'>blog</a></li>
+		
+		<li><a class:selected='{segment === "diensten"}' href='diensten'>diensten</a></li>
+		<li><a class:selected='{segment === "over"}' href='over'>over</a></li>
+		<li><a class:selected='{segment === undefined}' href='.'>start</a></li>
 	</ul>
 </nav>

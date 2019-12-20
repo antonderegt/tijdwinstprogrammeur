@@ -1,6 +1,6 @@
 {
-  "name": "antonderegt.nl",
-  "description": "antonderegt.nl",
+  "name": "tijdwinstprogrammeur",
+  "description": "tijdwinstprogrammeur",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
