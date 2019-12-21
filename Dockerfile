@@ -11,4 +11,5 @@ COPY --from=build-stage /app .
 COPY . .
 
 EXPOSE 3000
-CMD ["node", "__sapper__/build"]
+CMD ["npm", "start"]
+#CMD ["node", "__sapper__/build"]
