@@ -1,3 +1,7 @@
+<script>
+	import Typewriter from 'svelte-typewriter'
+</script>
+
 <style>
 	h1, figure, p {
 		text-align: center;
@@ -40,7 +44,9 @@
 
 <figure>
 	<img alt='Borat' src='great-success.png'>
-	<figcaption>HIGH FIVE!</figcaption>
+	<!-- <figcaption>HIGH FIVE!</figcaption> -->
 </figure>
 
-<p><strong>Het is tijd om terug je hangmat in te kruipen.</strong></p>
+<Typewriter interval={[60, 70, 80]}>
+    <p>Het is tijd om terug je hangmat in te kruipen.</p>
+</Typewriter>
