@@ -55,7 +55,6 @@
 </style>
 
 <nav>
-	
 	<ul>
 		<li class="logo"><a href='.'><strong>De Tijdwinst Programmeur</strong></a></li>
 		
